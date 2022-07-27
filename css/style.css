@@ -1,6 +1,5 @@
     * {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
     }
     
     body {
@@ -14,6 +13,7 @@
     .dropdown[x-out-of-boundaries] {
         transform: translate3d(0px, 30px, 0px) !important;
     }
+    
     .dropdown-toggle::after {
         display: none;
     }
@@ -50,23 +50,19 @@
         max-width: 100%;
         max-height: 100%;
     }
-
-    .partners{
+    
+    .partners {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100px;
-        
     }
-
-
     
     .foto-footer {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
         /* width: 400px; */
-      
     }
     
     .footer {
@@ -76,10 +72,10 @@
         background: rgb(196, 198, 199) !important;
         padding: 0;
         margin: 0;
-        width: 100% ;
+        width: 100%;
     }
-
-    .container-fluid{
+    
+    .container-fluid {
         width: 100%;
     }
     
@@ -100,7 +96,7 @@
         color: lightseagreen;
         font-weight: bold;
     }
-   
+    
     .style-type {
         list-style-type: none;
     }
@@ -195,8 +191,7 @@
         height: auto;
     }
     
-   
-    .aside{
+    .aside {
         margin-top: 80px;
     }
     
@@ -225,9 +220,9 @@
         border-radius: 50% !important;
         width: 30px;
         height: 30px;
-    }s
+    }
     
-    .centerd {
+    s .centerd {
         text-align: center;
     }
     
@@ -272,9 +267,7 @@
         right: 0;
         padding: 20px;
     }
-
-  
- 
+    
     .widget.single-news .details .category {
         font-size: 11px;
         text-transform: uppercase;
@@ -429,9 +422,10 @@
     .carousel-inner-data li {
         height: auto;
     }
-
-    .carousel-caption h5, .carousel-caption p {
-        color:#000000;
+    
+    .carousel-caption h5,
+    .carousel-caption p {
+        color: #000000;
     }
     
     .foto img {
@@ -713,4 +707,28 @@
     
     .butoni {
         background-color: blueviolet;
+    }
+    
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+    }
+    
+    .dissapear {
+        animation: vanish 1s forwards;
+    }
+    
+    @keyframes vanish {
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
     }
