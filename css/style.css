@@ -429,6 +429,10 @@
     .carousel-inner-data li {
         height: auto;
     }
+
+    .carousel-caption h5, .carousel-caption p {
+        color:#000000;
+    }
     
     .foto img {
         padding: 15px;
@@ -497,6 +501,7 @@
         padding-bottom: 20px;
         color: #5543ca;
         background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+        /* background-clip: border-box; */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
